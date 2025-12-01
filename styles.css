@@ -1,0 +1,140 @@
+/* ====== ESTILOS GENERALES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f2f4f7;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  background: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  background: #e0e7ff;
+  border-color: #1d4ed8;
+}
+
+/* ====== SECCIONES ====== */
+section {
+  background: white;
+  padding: 25px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #1d4ed8;
+}
+
+/* ====== LISTAS ====== */
+ul, ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ====== CÓDIGO ====== */
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* ====== FORMULARIO LOGIN ====== */
+form {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 10px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
